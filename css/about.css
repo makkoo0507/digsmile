@@ -1,233 +1,231 @@
 body{
-    font-family:'Montserrat', 'Noto Sans JP', sans-serif; 
+    font-family:'Montserrat', 'Noto Sans JP', sans-serif;
     }
 
-    /* ヘッダー */
-    
-    header{
-        position: fixed;
-        z-index: 10;
-        width: 100%;
-    }
-    .headerWrapper{
-        width:90%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .headerLogo{
-        width:260px;
-    }
-    .burgerWrapper{
-        display: flex;
-        align-items: center;
-    }
-    .burgerMenu{
-        margin-right:10px ;
-        padding-top: 3px;
-    }
-    .bar{
-        display: block;
-        background-color: #FFFFFF;
-        height: 2px;
-        width:30px;
-        margin-bottom: 5px;
-        transition: 1s;
-    }
-    .barTop{
-        transform: translate(0 ,3px) rotate(45deg);
-        transition: 1s;
-    }
-    .barMiddle{
-        display: none;
-        transition: 1s;
-    }
-    .barBottom{
-        transform: translate(0 ,-3px) rotate(-45deg);
-        transition: 1s;
-    }
-    .menuLogo{
-        color: #FFFFFF;
-    }
-    
-    nav{
-      position: fixed;
-      z-index: 9;
-      width:100vw;
-      height: 100vh;
-    }
-    
-    .navLeft{
-      width: 100%;
-      height: 100%;
-      background-color:rgba(34,34,34,0.6)
-    }
-    .navRight{
-      position: absolute;
-      right:-40%;
-      width:40%;
-      height: 100%;
-      background-color:rgba(34,34,34,0.9);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .open{
-      right:0;
-    }
-    .navItem{
-      font-size: 20px;
-      color: #FFFFFF;
-      margin-bottom: 34px;
-    }
-    
-    /* ファーストビュー */
-    .fv{
-        height:100vh;
-    }
-    .fvBack{
-        height:100%;
-        display: flex;
-    }
-    .fvLeft{
-        height:100%;
-        width:50%;
-    }
-    .fvRight{
-        height:100%;
-        width:50%;
-        background-color: #222222;
-    }
-    .fvContainer{
-        background-image: url(/img/jacek-dylag-PMxT-2@2x.png);
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        top:0;
-        left: 0;
-        width:78vw;
-        height: 85vh;
-        display: flex;
-        align-items: center;
-    }
-    .fvCopy{
-        position: absolute;
-        right: -10%;
-        color: #FFFFFF;
-    }
-    .copy_top{
-        font-size: 72px;
-        font-weight:900;
-    }
-    .copy_bottom{
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    /* ビジョン */
-    .sectionTitle{
-        font-size: 32px;
-        margin-bottom: 31px;
-    }
-    .copy_vision{
-        font-size:24px;
-        margin-bottom: 40px;
-    }
-    .visionWrapper{
-        padding: 150px 20%;
+/* ヘッダー */
 
-    }
-    .sectionText{
-        font-size: 16px;
-        color: #333333;
-    }
-    .sectionText span{
-        display: block;
-        margin-bottom: 2em;
-    }
-    /* ceo メッセージ */
-    #ceoMessege{
-        padding: 0 5%;
-        position: relative;
-    }
-    .ceoImg{
-        min-width: 30%;
-        position: relative;
-        z-index: 2;
-    }
-    .ceoMesseRight{
-        display: flex;
-        justify-content: end;
-    }
-    .ceoMesseBack{
-        background-color: #F0F0F0;
-        width: 900px;
-        padding: 100px 0;
-        position: relative;
-        top:-100px;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .ceoMesseWrapper{
-        padding: 50px;
-        max-width: 450px;
-    }
-    /* カンパニーインフォメーション */
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.headerWrapper{
+    width:90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.headerLogo{
+    width:260px;
+}
+.burgerWrapper{
+    display: flex;
+    align-items: center;
+}
+.burgerMenu{
+    margin-right:10px ;
+    padding-top: 3px;
+}
+.bar{
+    display: block;
+    background-color: #FFFFFF;
+    height: 2px;
+    width:30px;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+.barTop{
+    transform: translate(0 ,3px) rotate(45deg);
+    transition: 1s;
+}
+.barMiddle{
+    display: none;
+    transition: 1s;
+}
+.barBottom{
+    transform: translate(0 ,-3px) rotate(-45deg);
+    transition: 1s;
+}
+.menuLogo{
+    color: #FFFFFF;
+}
 
-    .conpanyWrapper{
-        padding: 0 5%;
-    }
-    #conpany .sectionTitle{
-        border-bottom: solid 2px #DDDDDD;
-        padding-bottom: 31px;
-    }
-    .tableWrapper_info{
-        display: flex;
-        justify-content:flex-end;
-    }
-    .infoTable{
-        font-family:"游ゴシック体";
-        border-collapse:collapse;
-    }
-    tr{
-        border-bottom: solid 2px #DDDDDD;
-        line-height: 4em;
-    }
-    .infoCategory{
-        width:100px;
-    }
-    .infoItem{
-        width:800px;
-        font-weight: lighter;
+nav{
+    position: fixed;
+    z-index: 9;
+    width:100vw;
+    height: 100vh;
+}
 
-    }
-    .mapWrapper{
-        width:100%;
-        margin-top: 40px;
-    }
-    .mapWrapper iframe{
-        width:100%;
-    }
+.navLeft{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(34,34,34,0.6)
+}
+.navRight{
+    position: absolute;
+    right:-40%;
+    width:40%;
+    height: 100%;
+    background-color:rgba(34,34,34,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.open{
+    right:0;
+}
+.navItem{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
 
+/* ファーストビュー */
+.fv{
+    height:100vh;
+}
+.fvBack{
+    height:100%;
+    display: flex;
+}
+.fvLeft{
+    height:100%;
+    width:50%;
+}
+.fvRight{
+    height:100%;
+    width:50%;
+    background-color: #222222;
+}
+.fvContainer{
+    background-image: url(../img/jacek-dylag-PMxT-2@2x.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:78vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+}
+.fvCopy{
+    position: absolute;
+    right: -10%;
+    color: #FFFFFF;
+}
+.copy_top{
+    font-size: 72px;
+    font-weight:900;
+}
+.copy_bottom{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+/* ビジョン */
+.sectionTitle{
+    font-size: 32px;
+    margin-bottom: 31px;
+}
+.copy_vision{
+    font-size:24px;
+    margin-bottom: 40px;
+}
+.visionWrapper{
+    padding: 150px 20%;
 
-    /* フッター */
-    footer{
-        margin-top: 100px;
-        background-color: #525252;
-        color: #FFFFFF;
-        font-size: 10px;
-        text-align: center;
-        height:50px;
-      }
-    footer p{
-        color: #FFFFFF;
-        font-size: 10px;
-        text-align: center;
-        line-height: 50px; 
-    }
+}
+.sectionText{
+    font-size: 16px;
+    color: #333333;
+}
+.sectionText span{
+    display: block;
+    margin-bottom: 2em;
+}
+/* ceo メッセージ */
+#ceoMessege{
+    padding: 0 5%;
+    position: relative;
+}
+.ceoImg{
+    min-width: 30%;
+    position: relative;
+    z-index: 2;
+}
+.ceoMesseRight{
+    display: flex;
+    justify-content: end;
+}
+.ceoMesseBack{
+    background-color: #F0F0F0;
+    width: 900px;
+    padding: 100px 0;
+    position: relative;
+    top:-100px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ceoMesseWrapper{
+    padding: 50px;
+    max-width: 450px;
+}
+/* カンパニーインフォメーション */
+
+.conpanyWrapper{
+    padding: 0 5%;
+}
+#conpany .sectionTitle{
+    border-bottom: solid 2px #DDDDDD;
+    padding-bottom: 31px;
+}
+.tableWrapper_info{
+    display: flex;
+    justify-content:flex-end;
+}
+.infoTable{
+    font-family:"游ゴシック体";
+    border-collapse:collapse;
+}
+tr{
+    border-bottom: solid 2px #DDDDDD;
+    line-height: 4em;
+}
+.infoCategory{
+    width:100px;
+}
+.infoItem{
+    width:800px;
+    font-weight: lighter;
+
+}
+.mapWrapper{
+    width:100%;
+    margin-top: 40px;
+}
+.mapWrapper iframe{
+    width:100%;
+}
 
 
+/* フッター */
+footer{
+    margin-top: 100px;
+    background-color: #525252;
+    color: #FFFFFF;
+    font-size: 10px;
+    text-align: center;
+    height:50px;
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 10px;
+    text-align: center;
+    line-height: 50px;
+}
