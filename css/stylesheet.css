@@ -113,6 +113,7 @@ nav{
 .fvContainer{
     background-image: url(../img/kv-img@2x.png);
     background-position: center;
+    background-size: cover;
     position: absolute;
     top:0;
     left: 0;
