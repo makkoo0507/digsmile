@@ -7,7 +7,7 @@
   }
 
 body{
-font-family:'Montserrat', 'Noto Sans JP', sans-serif; 
+font-family:'Montserrat', 'Noto Sans JP', sans-serif;
 }
 /* ヘッダー */
 header{
@@ -111,7 +111,7 @@ nav{
     background-color: #222222;
 }
 .fvContainer{
-    background-image: url(/img/kv-img@2x.png);
+    background-image: url(/../img/kv-img@2x.png);
     background-position: center;
     position: absolute;
     top:0;
@@ -137,7 +137,7 @@ nav{
 /* アバウト */
 #about{
     margin-top: 120px;
-    
+
 }
 .backImg_about{
     background-image: url(/img/about-img@2x.png);
@@ -205,7 +205,7 @@ nav{
   justify-content: flex-end;
 }
 .topicList{
-  min-width:60%;  
+  min-width:60%;
 }
 .topicItem{
   width:100%;
@@ -280,9 +280,9 @@ footer p{
     justify-content:flex-start
   }
   .topicList{
-    width:100%;  
+    width:100%;
   }
-  
+
   .btn_latest{
     text-align:start;
   }
@@ -297,7 +297,7 @@ footer p{
     width:100%;
     margin-bottom: 36px;
   }
-  
+
 
 
 
