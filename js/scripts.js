@@ -1,6 +1,6 @@
 $(function() {
     $('nav').hide();
-    
+
     $('.burgerMenu').click(function(){
         $('.bar').eq('0').toggleClass('barTop');
         $('.bar').eq(1).toggleClass('barMiddle');
@@ -25,5 +25,13 @@ $(function() {
             $('.navRight').animate({right:'-40%'},600)
         }
     })
+    $(window).on('load scroll',function(){
+        if($(this).scrollTop()>$('#fv').outerHeight()-150){
+            $('header').addClass('backBlack');
+        }else{
+            $('header').removeClass('backBlack');
+        }
+
+    });
 
 });

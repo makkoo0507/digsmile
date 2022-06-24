@@ -14,7 +14,14 @@ header{
     position: fixed;
     z-index: 10;
     width: 100%;
+    transition: 0.7s;
 }
+
+.backBlack{
+  background-color: #282F35;
+  transition: 0.7s;
+}
+
 .headerWrapper{
     width:90%;
     margin: auto;
@@ -91,6 +98,7 @@ nav{
   color: #FFFFFF;
   margin-bottom: 34px;
 }
+
 
 
 /* ファーストビュー */
